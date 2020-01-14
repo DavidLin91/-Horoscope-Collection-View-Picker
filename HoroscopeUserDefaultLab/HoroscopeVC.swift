@@ -14,7 +14,7 @@ class HoroscopeVC: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var userLabel: UITextField!
     @IBOutlet weak var horoscopeDescriptionLabel: UIImageView!
-    @IBOutlet weak var descriptionSunSignLabel: UILabel!
+    @IBOutlet weak var sunSignName: UILabel!
     @IBOutlet weak var sunSignDescription: UILabel!
     @IBOutlet weak var birthdayTextBox: UITextField!
     
@@ -62,16 +62,46 @@ class HoroscopeVC: UIViewController {
         
         switch date {
         case HoroscopeDates.AquariusStart.days()...HoroscopeDates.AquariusEnd.days():
-            break
+            collectionView.scrollToItem(at: NSIndexPath(item: 10, section: 0 ) as IndexPath, at: [],animated: false)
+        
+        case HoroscopeDates.PiscesStart.days()...HoroscopeDates.PiscesEnd.days():
+            collectionView.scrollToItem(at: NSIndexPath(item: 11, section: 0 ) as IndexPath, at: [],animated: false)
+        
+        case HoroscopeDates.AriesStart.days()...HoroscopeDates.AriesEnd.days():
+            collectionView.scrollToItem(at: NSIndexPath(item: 0, section: 0 ) as IndexPath, at: [],animated: false)
+        
+        case HoroscopeDates.TaurusStart.days()...HoroscopeDates.TaurusEnd.days():
+            collectionView.scrollToItem(at: NSIndexPath(item: 1, section: 0 ) as IndexPath, at: [],animated: false)
+        
+        case HoroscopeDates.GeminiStart.days()...HoroscopeDates.GeminiEnd.days():
+            collectionView.scrollToItem(at: NSIndexPath(item: 2, section: 0 ) as IndexPath, at: [],animated: false)
+        
+        case HoroscopeDates.CancerStart.days()...HoroscopeDates.CancerEnd.days():
+            collectionView.scrollToItem(at: NSIndexPath(item: 3, section: 0 ) as IndexPath, at: [],animated: false)
+            
+        case HoroscopeDates.LeoStart.days()...HoroscopeDates.LeoEnd.days():
+            collectionView.scrollToItem(at: NSIndexPath(item: 4, section: 0 ) as IndexPath, at: [],animated: false)
+        
+        case HoroscopeDates.VirgoStart.days()...HoroscopeDates.VirgoEnd.days():
+        collectionView.scrollToItem(at: NSIndexPath(item: 5, section: 0 ) as IndexPath, at: [],animated: false)
+            
+        case HoroscopeDates.LibraStart.days()...HoroscopeDates.LibraEnd.days():
+        collectionView.scrollToItem(at: NSIndexPath(item: 7, section: 0 ) as IndexPath, at: [],animated: false)
+            
+        case HoroscopeDates.ScorpioStart.days()...HoroscopeDates.ScorpioEnd.days():
+        collectionView.scrollToItem(at: NSIndexPath(item: 8, section: 0 ) as IndexPath, at: [],animated: false)
+            
+        case HoroscopeDates.SagittariusStart.days()...HoroscopeDates.SagittariusEnd.days():
+        collectionView.scrollToItem(at: NSIndexPath(item: 9, section: 0 ) as IndexPath, at: [],animated: false)
+        
+        case HoroscopeDates.CapricornStart.days()...HoroscopeDates.CapricornEnd.days():
+        collectionView.scrollToItem(at: NSIndexPath(item: 10, section: 0 ) as IndexPath, at: [],animated: false)
+            
         default:
-             break
-            }
+            break
         }
-        
-        
     }
-    
-
+}
 
 extension HoroscopeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -83,8 +113,10 @@ extension HoroscopeVC: UICollectionViewDataSource {
             fatalError()
         }
         let horoscope = horoscopes[indexPath.row]
+        print(indexPath.row)
         cell.configureCell(horoscope: horoscope)
-        descriptionSunSignLabel.text = horoscope.sunsign
+        sunSignName.text = horoscope.sunsign
+        print(horoscope.sunsign)
         sunSignDescription.text = horoscope.horoscope
         return cell
     }

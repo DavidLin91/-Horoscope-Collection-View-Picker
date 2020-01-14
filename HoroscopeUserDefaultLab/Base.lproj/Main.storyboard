@@ -94,8 +94,8 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="179" height="159"/>
                                         <connections>
-                                            <outlet property="birthdayLabel" destination="M8u-l9-D4J" id="HXo-Zr-IHK"/>
                                             <outlet property="horoscopeImage" destination="Q3o-M8-1AC" id="Dsw-As-RaQ"/>
+                                            <outlet property="horoscopeLabel" destination="M8u-l9-D4J" id="HXo-Zr-IHK"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -153,11 +153,11 @@
                     <connections>
                         <outlet property="birthdayTextBox" destination="FdC-8I-ww7" id="3ei-vI-0iZ"/>
                         <outlet property="collectionView" destination="aQp-ZL-Mi5" id="Jiq-yO-MZl"/>
-                        <outlet property="descriptionSunSignLabel" destination="Llm-07-uwG" id="oaP-hx-JQN"/>
                         <outlet property="enterNameButton" destination="tEK-bH-gOa" id="kmA-X3-Svi"/>
                         <outlet property="horoscopeDescriptionLabel" destination="ozV-ea-nNZ" id="uLk-AI-Ywx"/>
                         <outlet property="nameLabel" destination="BwT-OB-J91" id="EKw-A7-0bw"/>
                         <outlet property="sunSignDescription" destination="wv1-2H-5nu" id="thW-us-brY"/>
+                        <outlet property="sunSignName" destination="Llm-07-uwG" id="oaP-hx-JQN"/>
                         <outlet property="userLabel" destination="nh8-PO-Awq" id="lsO-Rq-BuO"/>
                     </connections>
                 </viewController>

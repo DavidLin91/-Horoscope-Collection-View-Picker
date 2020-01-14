@@ -10,12 +10,12 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var horoscopeImage: UIImageView!
-    @IBOutlet weak var birthdayLabel: UILabel!
+    @IBOutlet weak var horoscopeLabel: UILabel!
     
     
     
     func configureCell(horoscope: Horoscopes) {
-        birthdayLabel.text = horoscope.date
+        horoscopeLabel.text = horoscope.sunsign
         horoscopeImage.image = UIImage(named: "\(horoscope.sunsign.lowercased())")
     }
 }

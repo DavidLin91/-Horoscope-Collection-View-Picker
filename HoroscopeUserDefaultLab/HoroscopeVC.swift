@@ -13,10 +13,14 @@ class HoroscopeVC: UIViewController {
     @IBOutlet weak var enterNameButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var userLabel: UITextField!
+    @IBOutlet weak var horoscopeDescriptionLabel: UIImageView!
+    @IBOutlet weak var horoscopeDescriptionTextView: UITextView!
     
     
     override func viewDidLayoutSubviews() {
         enterNameButton.layer.cornerRadius = 5.0
+        horoscopeDescriptionLabel.layer.cornerRadius = 10.0
+        
     }
     
     
@@ -24,6 +28,8 @@ class HoroscopeVC: UIViewController {
         super.viewDidLoad()
     }
 
+    
+    
     @IBAction func enterButtonPressed(_ sender: UIButton) {
         nameLabel.text = "Welcome \(userLabel.text ?? "")!"
     }

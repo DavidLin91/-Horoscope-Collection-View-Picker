@@ -39,27 +39,70 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aQp-ZL-Mi5">
-                                <rect key="frame" x="0.0" y="212" width="423" height="260"/>
+                                <rect key="frame" x="0.0" y="212" width="423" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UeK-V1-c3n">
-                                    <size key="itemSize" width="186" height="199"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UeK-V1-c3n">
+                                    <size key="itemSize" width="179" height="159"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tnZ-S6-ObI">
-                                        <rect key="frame" x="0.0" y="0.0" width="186" height="199"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="horoscopeImage" id="tnZ-S6-ObI" userLabel="collectionViewCell" customClass="CollectionViewCell" customModule="HoroscopeUserDefaultLab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="179" height="159"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WSO-KK-Mw2">
-                                            <rect key="frame" x="0.0" y="0.0" width="186" height="199"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="179" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aquarius" translatesAutoresizingMaskIntoConstraints="NO" id="Q3o-M8-1AC">
+                                                    <rect key="frame" x="-1" y="0.0" width="181" height="132"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comicbox" translatesAutoresizingMaskIntoConstraints="NO" id="x5v-Rp-rKG" userLabel="comicboxBackgroundColor">
+                                                    <rect key="frame" x="-1" y="133" width="181" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25.999999999999943" id="Okq-Jl-GPs"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8u-l9-D4J">
+                                                    <rect key="frame" x="0.0" y="133" width="179" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="x5v-Rp-rKG" secondAttribute="trailing" id="AvP-V1-jFe"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q3o-M8-1AC" secondAttribute="trailing" id="JGg-QM-8zz"/>
+                                                <constraint firstAttribute="bottom" secondItem="x5v-Rp-rKG" secondAttribute="bottom" id="Kfg-3R-Cdh"/>
+                                                <constraint firstItem="Q3o-M8-1AC" firstAttribute="leading" secondItem="WSO-KK-Mw2" secondAttribute="leading" id="NSs-wW-GDe"/>
+                                                <constraint firstItem="Q3o-M8-1AC" firstAttribute="top" secondItem="WSO-KK-Mw2" secondAttribute="top" id="ZA3-4F-8cQ"/>
+                                                <constraint firstItem="x5v-Rp-rKG" firstAttribute="leading" secondItem="WSO-KK-Mw2" secondAttribute="leading" id="dHj-JE-7er"/>
+                                                <constraint firstItem="x5v-Rp-rKG" firstAttribute="top" secondItem="Q3o-M8-1AC" secondAttribute="bottom" id="knr-G7-Iyg"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="186" height="199"/>
+                                        <size key="customSize" width="179" height="159"/>
+                                        <connections>
+                                            <outlet property="horoscopeImage" destination="Q3o-M8-1AC" id="Dsw-As-RaQ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comicbox" translatesAutoresizingMaskIntoConstraints="NO" id="ozV-ea-nNZ">
+                                <rect key="frame" x="64" y="531" width="366" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8N6-dh-I3B">
+                                <rect key="frame" x="64" y="551" width="350" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.7456376903553299" green="0.60813488453400599" blue="0.48513959732777578" alpha="0.77260809075342463" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,6 +121,8 @@
                     <connections>
                         <outlet property="collectionView" destination="aQp-ZL-Mi5" id="Jiq-yO-MZl"/>
                         <outlet property="enterNameButton" destination="tEK-bH-gOa" id="kmA-X3-Svi"/>
+                        <outlet property="horoscopeDescriptionLabel" destination="ozV-ea-nNZ" id="uLk-AI-Ywx"/>
+                        <outlet property="horoscopeDescriptionTextView" destination="8N6-dh-I3B" id="qNh-EO-qr7"/>
                         <outlet property="nameLabel" destination="BwT-OB-J91" id="EKw-A7-0bw"/>
                         <outlet property="userLabel" destination="nh8-PO-Awq" id="lsO-Rq-BuO"/>
                     </connections>
@@ -87,4 +132,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aquarius" width="600" height="442"/>
+        <image name="comicbox" width="417" height="196"/>
+    </resources>
 </document>

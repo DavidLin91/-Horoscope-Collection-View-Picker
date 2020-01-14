@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6305696C23CE510700E6238C /* HoroscopeDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305696B23CE510700E6238C /* HoroscopeDates.swift */; };
+		6305696E23CE5A7F00E6238C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305696D23CE5A7F00E6238C /* DateExtension.swift */; };
 		633574DA23CD66AC008C9935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633574D923CD66AC008C9935 /* AppDelegate.swift */; };
 		633574DC23CD66AC008C9935 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633574DB23CD66AC008C9935 /* SceneDelegate.swift */; };
 		633574DE23CD66AC008C9935 /* HoroscopeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633574DD23CD66AC008C9935 /* HoroscopeVC.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6305696B23CE510700E6238C /* HoroscopeDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeDates.swift; sourceTree = "<group>"; };
+		6305696D23CE5A7F00E6238C /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		633574D623CD66AC008C9935 /* HoroscopeUserDefaultLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoroscopeUserDefaultLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633574D923CD66AC008C9935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		633574DB23CD66AC008C9935 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				633574D923CD66AC008C9935 /* AppDelegate.swift */,
 				633574DB23CD66AC008C9935 /* SceneDelegate.swift */,
 				633574DD23CD66AC008C9935 /* HoroscopeVC.swift */,
+				6305696D23CE5A7F00E6238C /* DateExtension.swift */,
+				6305696B23CE510700E6238C /* HoroscopeDates.swift */,
 				6335750623CD70A4008C9935 /* CollectionViewCell.swift */,
 				633574DF23CD66AC008C9935 /* Main.storyboard */,
 				633574E223CD66B0008C9935 /* Assets.xcassets */,
@@ -234,7 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6335750023CD6729008C9935 /* Horoscope.swift in Sources */,
+				6305696E23CE5A7F00E6238C /* DateExtension.swift in Sources */,
 				6335750323CD675C008C9935 /* HoroscopeAPIClient.swift in Sources */,
+				6305696C23CE510700E6238C /* HoroscopeDates.swift in Sources */,
 				6335750723CD70A4008C9935 /* CollectionViewCell.swift in Sources */,
 				633574DE23CD66AC008C9935 /* HoroscopeVC.swift in Sources */,
 				633574DA23CD66AC008C9935 /* AppDelegate.swift in Sources */,

@@ -19,3 +19,5 @@ class CollectionViewCell: UICollectionViewCell {
         horoscopeImage.image = UIImage(named: "\(horoscope.sunsign.lowercased())")
     }
 }
+
+

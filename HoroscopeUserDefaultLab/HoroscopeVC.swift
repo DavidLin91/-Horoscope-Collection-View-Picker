@@ -18,9 +18,6 @@ class HoroscopeVC: UIViewController {
     @IBOutlet weak var sunSignDescription: UILabel!
     @IBOutlet weak var birthdayTextBox: UITextField!
     
-    
-    
-    
     private var horoscopes = [Horoscopes]() {
         didSet {
             DispatchQueue.main.async {
@@ -54,10 +51,27 @@ class HoroscopeVC: UIViewController {
     
     
     @IBAction func enterButtonPressed(_ sender: UIButton) {
-        nameLabel.text = "Name: \(userLabel.text ?? "") - Birthday: \(birthdayTextBox.text ?? "")"
+        nameLabel.text = "\(userLabel.text ?? "") - Birthday: \(birthdayTextBox.text ?? "")"
+        
+        let userBirthdayString = birthdayTextBox.text ?? ""
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd"
+        let date = dateFormatter.date(from:userBirthdayString)!
+        print(date)
+        
+        
+        switch date {
+        case HoroscopeDates.AquariusStart.days()...HoroscopeDates.AquariusEnd.days():
+            break
+        default:
+             break
+            }
+        }
+        
+        
     }
     
-}
+
 
 extension HoroscopeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -74,4 +88,6 @@ extension HoroscopeVC: UICollectionViewDataSource {
         sunSignDescription.text = horoscope.horoscope
         return cell
     }
+    
+    
 }

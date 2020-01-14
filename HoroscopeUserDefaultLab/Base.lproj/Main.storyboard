@@ -66,7 +66,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comicbox" translatesAutoresizingMaskIntoConstraints="NO" id="x5v-Rp-rKG" userLabel="comicboxBackgroundColor">
-                                                    <rect key="frame" x="0.0" y="133" width="179.00000000000011" height="26.000000000000057"/>
+                                                    <rect key="frame" x="0.0" y="133" width="179" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25.999999999999943" id="Okq-Jl-GPs"/>
                                                     </constraints>
@@ -101,7 +101,7 @@
                                 </cells>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comicbox" translatesAutoresizingMaskIntoConstraints="NO" id="ozV-ea-nNZ">
-                                <rect key="frame" x="45" y="458" width="369.00000000000011" height="382.00000000000006"/>
+                                <rect key="frame" x="45" y="458" width="369" height="382"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="382" id="ExF-3s-chE"/>
                                 </constraints>

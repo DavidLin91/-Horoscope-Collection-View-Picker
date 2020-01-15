@@ -62,37 +62,37 @@ class HoroscopeVC: UIViewController {
             collectionView.scrollToItem(at: NSIndexPath(item: 10, section: 0 ) as IndexPath, at: [],animated: false)
         
         case HoroscopeDates.PiscesStart.days()...HoroscopeDates.PiscesEnd.days():
-            collectionView.scrollToItem(at: NSIndexPath(item: 11, section: 0 ) as IndexPath, at: [],animated: false)
-        
-        case HoroscopeDates.AriesStart.days()...HoroscopeDates.AriesEnd.days():
-            collectionView.scrollToItem(at: NSIndexPath(item: 0, section: 0 ) as IndexPath, at: [],animated: false)
-        
-        case HoroscopeDates.TaurusStart.days()...HoroscopeDates.TaurusEnd.days():
             collectionView.scrollToItem(at: NSIndexPath(item: 1, section: 0 ) as IndexPath, at: [],animated: false)
         
+        case HoroscopeDates.AriesStart.days()...HoroscopeDates.AriesEnd.days():
+            collectionView.scrollToItem(at: NSIndexPath(item: 6, section: 0 ) as IndexPath, at: [],animated: false)
+        
+        case HoroscopeDates.TaurusStart.days()...HoroscopeDates.TaurusEnd.days():
+            collectionView.scrollToItem(at: NSIndexPath(item: 5, section: 0 ) as IndexPath, at: [],animated: false)
+        
         case HoroscopeDates.GeminiStart.days()...HoroscopeDates.GeminiEnd.days():
-            collectionView.scrollToItem(at: NSIndexPath(item: 2, section: 0 ) as IndexPath, at: [],animated: false)
+            collectionView.scrollToItem(at: NSIndexPath(item: 7, section: 0 ) as IndexPath, at: [],animated: false)
         
         case HoroscopeDates.CancerStart.days()...HoroscopeDates.CancerEnd.days():
-            collectionView.scrollToItem(at: NSIndexPath(item: 3, section: 0 ) as IndexPath, at: [],animated: false)
+            collectionView.scrollToItem(at: NSIndexPath(item: 2, section: 0 ) as IndexPath, at: [],animated: false)
             
         case HoroscopeDates.LeoStart.days()...HoroscopeDates.LeoEnd.days():
-            collectionView.scrollToItem(at: NSIndexPath(item: 4, section: 0 ) as IndexPath, at: [],animated: false)
+            collectionView.scrollToItem(at: NSIndexPath(item: 3, section: 0 ) as IndexPath, at: [],animated: false)
         
         case HoroscopeDates.VirgoStart.days()...HoroscopeDates.VirgoEnd.days():
-        collectionView.scrollToItem(at: NSIndexPath(item: 5, section: 0 ) as IndexPath, at: [],animated: false)
+        collectionView.scrollToItem(at: NSIndexPath(item: 9 , section: 0 ) as IndexPath, at: [],animated: false)
             
         case HoroscopeDates.LibraStart.days()...HoroscopeDates.LibraEnd.days():
-        collectionView.scrollToItem(at: NSIndexPath(item: 7, section: 0 ) as IndexPath, at: [],animated: false)
+        collectionView.scrollToItem(at: NSIndexPath(item: 4, section: 0 ) as IndexPath, at: [],animated: false)
             
         case HoroscopeDates.ScorpioStart.days()...HoroscopeDates.ScorpioEnd.days():
         collectionView.scrollToItem(at: NSIndexPath(item: 8, section: 0 ) as IndexPath, at: [],animated: false)
             
         case HoroscopeDates.SagittariusStart.days()...HoroscopeDates.SagittariusEnd.days():
-        collectionView.scrollToItem(at: NSIndexPath(item: 9, section: 0 ) as IndexPath, at: [],animated: false)
+        collectionView.scrollToItem(at: NSIndexPath(item: 11, section: 0 ) as IndexPath, at: [],animated: false)
         
         case HoroscopeDates.CapricornStart.days()...HoroscopeDates.CapricornEnd.days():
-        collectionView.scrollToItem(at: NSIndexPath(item: 10, section: 0 ) as IndexPath, at: [],animated: false)
+        collectionView.scrollToItem(at: NSIndexPath(item: 0, section: 0 ) as IndexPath, at: [],animated: false)
             
         default:
             break

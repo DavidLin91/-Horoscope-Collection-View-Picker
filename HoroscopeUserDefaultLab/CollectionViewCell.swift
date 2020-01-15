@@ -17,7 +17,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     
     func configureCell(horoscope: Horoscopes) {
-        horoscopeLabel.text = horoscope.sunsign
+        horoscopeLabel.text = horoscope.sunsign.uppercased()
         horoscopeImage.image = UIImage(named: "\(horoscope.sunsign.lowercased())")
         horoscopeDescription.text = horoscope.horoscope
     }

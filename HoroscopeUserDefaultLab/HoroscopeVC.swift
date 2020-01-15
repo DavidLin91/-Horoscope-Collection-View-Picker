@@ -13,10 +13,8 @@ class HoroscopeVC: UIViewController {
     @IBOutlet weak var enterNameButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var userLabel: UITextField!
-    @IBOutlet weak var horoscopeDescriptionLabel: UIImageView!
-    @IBOutlet weak var sunSignName: UILabel!
-    @IBOutlet weak var sunSignDescription: UILabel!
     @IBOutlet weak var birthdayTextBox: UITextField!
+   
     
     private var horoscopes = [Horoscopes]() {
         didSet {
@@ -28,7 +26,6 @@ class HoroscopeVC: UIViewController {
     
     override func viewDidLayoutSubviews() {
         enterNameButton.layer.cornerRadius = 5.0
-        horoscopeDescriptionLabel.layer.cornerRadius = 10.0
     }
     
     override func viewDidLoad() {
@@ -115,9 +112,6 @@ extension HoroscopeVC: UICollectionViewDataSource {
         let horoscope = horoscopes[indexPath.row]
         print(indexPath.row)
         cell.configureCell(horoscope: horoscope)
-        sunSignName.text = horoscope.sunsign
-        print(horoscope.sunsign)
-        sunSignDescription.text = horoscope.horoscope
         return cell
     }
     

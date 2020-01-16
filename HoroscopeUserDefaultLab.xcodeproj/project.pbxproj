@@ -19,6 +19,7 @@
 		6335750023CD6729008C9935 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633574FF23CD6729008C9935 /* Horoscope.swift */; };
 		6335750323CD675C008C9935 /* HoroscopeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335750223CD675C008C9935 /* HoroscopeAPIClient.swift */; };
 		6335750723CD70A4008C9935 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335750623CD70A4008C9935 /* CollectionViewCell.swift */; };
+		6348CC8D23D027D900BC75F9 /* UserPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348CC8C23D027D900BC75F9 /* UserPreference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		633574FF23CD6729008C9935 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
 		6335750223CD675C008C9935 /* HoroscopeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeAPIClient.swift; sourceTree = "<group>"; };
 		6335750623CD70A4008C9935 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		6348CC8C23D027D900BC75F9 /* UserPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				633574DD23CD66AC008C9935 /* HoroscopeVC.swift */,
 				6305696B23CE510700E6238C /* HoroscopeDates.swift */,
 				6335750623CD70A4008C9935 /* CollectionViewCell.swift */,
+				6348CC8C23D027D900BC75F9 /* UserPreference.swift */,
 				633574DF23CD66AC008C9935 /* Main.storyboard */,
 				633574E223CD66B0008C9935 /* Assets.xcassets */,
 				633574E423CD66B0008C9935 /* LaunchScreen.storyboard */,
@@ -241,6 +244,7 @@
 				6305696C23CE510700E6238C /* HoroscopeDates.swift in Sources */,
 				6335750723CD70A4008C9935 /* CollectionViewCell.swift in Sources */,
 				633574DE23CD66AC008C9935 /* HoroscopeVC.swift in Sources */,
+				6348CC8D23D027D900BC75F9 /* UserPreference.swift in Sources */,
 				633574DA23CD66AC008C9935 /* AppDelegate.swift in Sources */,
 				633574DC23CD66AC008C9935 /* SceneDelegate.swift in Sources */,
 			);
